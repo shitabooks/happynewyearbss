@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year 2026 | Bhanu Shankar Sharma</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;}
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(to bottom, #0a1a44, #b11226);
+    color:#fff;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+/* HERO */
+.hero{
+    padding:70px 20px 40px;
+    position:relative;
+}
+.hero h1{
+    font-family:'Playfair Display', serif;
+    font-size:2.8rem;
+}
+.hero h2{
+    font-weight:300;
+    margin-bottom:20px;
+}
+
+/* PHOTO */
+.photo{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:4px solid #fff;
+    object-fit:cover;
+    margin:20px auto;
+}
+
+/* CARD */
+.card{
+    background:rgba(255,255,255,0.12);
+    margin:25px auto;
+    padding:25px;
+    border-radius:14px;
+    max-width:92%;
+    backdrop-filter:blur(6px);
+}
+
+/* ICONS */
+.icons{
+    font-size:2.2rem;
+    margin:20px 0;
+}
+
+/* TREES */
+.trees{
+    font-size:2.5rem;
+    margin-top:15px;
+}
+
+/* MUSIC BUTTON */
+.audio-btn{
+    background:#ffffff;
+    color:#0a1a44;
+    border:none;
+    padding:10px 20px;
+    border-radius:30px;
+    font-size:1rem;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+/* QR */
+.qr img{
+    margin-top:15px;
+    width:130px;
+    border:4px solid #fff;
+    border-radius:12px;
+}
+
+/* FOOTER */
+footer{
+    padding:30px 15px;
+    font-size:0.95rem;
+    border-top:1px solid rgba(255,255,255,0.3);
+    margin-top:40px;
+}
+
+/* SNOW */
+.snowflake{
+    position:fixed;
+    top:-10px;
+    color:white;
+    font-size:1em;
+    animation:fall linear infinite;
+}
+@keyframes fall{
+    to{transform:translateY(110vh);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- SNOW SCRIPT -->
+<script>
+for(let i=0;i<40;i++){
+    let s=document.createElement("div");
+    s.className="snowflake";
+    s.innerHTML="❄";
+    s.style.left=Math.random()*100+"vw";
+    s.style.animationDuration=(5+Math.random()*5)+"s";
+    s.style.opacity=Math.random();
+    s.style.fontSize=(12+Math.random()*18)+"px";
+    document.body.appendChild(s);
+}
+</script>
+
+<!-- HERO -->
+<div class="hero">
+    <div style="font-size:2.5rem;">🎆 🎇</div>
+    <h1>Happy New Year 2026</h1>
+    <h2>Wishing you joy, peace, and new beginnings</h2>
+
+    <!-- YOUR PHOTO -->
+    <img src="photo.jpg" alt="Bhanu Shankar Sharma" class="photo">
+
+    <div class="icons">🎅 🦌 🦌 ❄ ⭐</div>
+</div>
+
+<!-- MESSAGE -->
+<div class="card">
+<p>
+As the New Year unfolds, may 2026 bring good health, success,
+meaningful connections, and happiness in every walk of life.
+May the coming year be filled with hope, warmth, and positivity.
+</p>
+</div>
+
+<!-- SIGNATURE -->
+<div class="card">
+<h2 style="font-family:'Playfair Display', serif;">Warm New Year Wishes</h2>
+<p style="font-size:1.2rem;">
+— <strong>BHANU SHANKAR SHARMA</strong><br>2026
+</p>
+<div class="trees">🎄 🎄 🎄 🎄</div>
+</div>
+
+<!-- MUSIC -->
+<div class="card">
+<h3>🎶 New Year Music</h3>
+<button class="audio-btn" onclick="toggleMusic()">Play / Pause</button>
+<audio id="bgMusic" src="music.mp3"></audio>
+</div>
+
+<!-- QR CODE -->
+<div class="card qr">
+<h3>📱 Share This Greeting</h3>
+<p>Scan the QR code</p>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://yourusername.github.io/newyear2026/" alt="QR Code">
+</div>
+
+<footer>
+✨ May 2026 bring light, warmth, and happiness ✨
+</footer>
+
+<script>
+function toggleMusic(){
+    let m=document.getElementById("bgMusic");
+    if(m.paused){m.play();}else{m.pause();}
+}
+</script>
+
+</body>
+</html>
